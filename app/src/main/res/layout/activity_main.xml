@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F8F5F5">
+    <ImageView
+        android:background="#110029"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ImageView>
+    <ImageView
+        android:src="@drawable/vengadores"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ImageView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:alpha="0.1">
+    </ImageView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editImpar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:layout_weight="1"
+                android:hint="NOMBRE"
+                android:textColor="#ffffff"
+                android:inputType="textCapCharacters"
+                android:textColorHint="#ffffff"></EditText>
+
+            <ImageView
+                android:layout_width="184dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center"
+                android:src="@drawable/circuloiron"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editPar"
+                android:layout_margin="25dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:hint="NOMBRE"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:inputType="textCapCharacters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></EditText>
+
+            <ImageView
+                android:layout_width="184dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center"
+                android:src="@drawable/thanosinfondo"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEmpezar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:background="@drawable/boton_redondo"
+        android:text="EMPEZAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
